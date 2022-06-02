@@ -1,0 +1,67 @@
+/* google font(Roboto) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 3rem 0;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #222;
+}
+
+.posts {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.post {
+    width: 21%;
+    margin: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 1.8rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.post:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.post-title {
+    color: #222;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+
+.post-body {
+    color: #555;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+
+/* Responsive design */
+
+@media screen and (max-width: 992px) {
+    .post {
+        width: 46%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .post {
+        width: 100%;
+    }
+}
